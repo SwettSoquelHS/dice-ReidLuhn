@@ -9,7 +9,6 @@ Die Die8;
 Die Die9;
 int total;
 int highest;
-int lowest = 54;
 
 void setup(){
   //no loop means that draw is only called once
@@ -42,15 +41,11 @@ void draw(){
   Die9.show();
   text("Total: ", 50, 50);
   text("Highest: ", 50, 80);
-  text("Lowest: ", 50, 110);
   if (total >= highest){
     highest = total;
-  }else if (total <= lowest){
-    lowest = total;
   }
   text(total, 85, 50);
   text(highest, 100, 80);
-  text(lowest, 95, 110);
   total = 0;
 }
 
